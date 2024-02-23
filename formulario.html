@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como usar formulários</title>
+</head>
+<body>
+    
+        <h1 style="text-align: center;"><u>Aula de como uitilizar formulários</u></h1>
+    <h2 style="text-align: center;">Objetivo geral</h2>
+    <p style="text-align: justify;">Rever algumas tags <u>HTML</u>. Entender como funcionam os <mark>formulários</mark> de um website e como uma inforemação enviada através do formulário chega até o servidor.</p>
+    <h1><u>Iniciando o formulário</u></h1>
+    <form  name="signup" action="#" method="POST" target="_self" autocomplete="off" onsubmit="alert('Enviei o formulario')">
+        Nome: <input type="text" name="name"><br>
+        Idade: <input type="number" name="age"><br>
+        Senha: <input type="password" name="senha"><br>
+        <button type="submit">Enviar</button>
+    </form>
+    <h1>Novo formulário entendendo os inputs</h1>
+    <form action="">
+        <label for="">Text</label><input type="text" name="" id=""><br>
+        <label for="">Number:</label><input type="number" min="0" max="99" step="5"><br>
+        <label for="">Range:</label><input type="range" min="0" max="100" value="50"><br>
+        <label for="">Color:</label><input type="color"><br>
+        <label for="">Email:</label><input type="email"><br>
+        <label for="">Url:</label><input type="url"><br>
+        <label for="">Data</label><input type="date"><br>
+        <label for="">Week</label><input type="week"><br>
+        <label for="">month</label><input type="month"><br>
+        <label for="">Checkbox:</label><input type="checkbox"><br>
+        <label for="">Radio</label><input type="radio" name="aceita"><input type="radio" name="aceita"><br><!--Usado o name para escolher ou um ou outro radio-->
+        <label for="">Hidden:</label><input type="hidden"><br>
+        <label for="">File:</label><input type="file"><br><!--atributo multiple aceita vários arquivos-->
+        <label for="">Search</label><input type="search"><br>
+        <label for="">Button:</label><input type="button" value="Enviar" id="">
+        <button>Enviar</button><br><!--semanticamente falando o button é melhor do que o input-->
+    </form>
+    <h1>Diferenças entre Checkbox e Radio button</h1>
+    <form action="#" method="post">
+        <h3>Você selecionou: Pizza de Calabresa</h3>
+        <p>Quais opcionais você deseja?</p>
+        <input type="checkbox" name="opcional[]" value="queijo" disabled><label for="">+ queijo</label><br><!---disabled usado para deixar a opção inativa-->
+        <input type="checkbox" name="opcional[]" value="calabresa"><label for="">+ calabresa</label><br>
+        <input type="checkbox" name="opcional[]" value="cebola"><label for="">+ cebola</label><br>
+        <input type="checkbox" name="opcional[]" value="azeitona"><label for="">+ azeitona</label><br>
+       <p>Borda recheada?</p>
+       <input type="radio" name="borda" value="sim"><label for="">Sim</label><br>
+       <input type="radio" name="borda" value="nao"><label for="">Não</label><br>
+       <p>Bebida</p>
+       <input type="radio" name="bebida" value="suco"><label for="">Suco</label><br>
+       <input type="radio" name="bebida" value="refrigerante"><label for="">Rerigerante</label><br>
+       <input type="radio" name="bebida"value="agua"><label for="">Água</label><br>
+       <input type="radio" name="bebida" value="nenhum"><label for="">Nenhum</label><br>
+       <button type="submit">Enviar pedido</button>
+
+    </form>
+    <h3>Falando sobre button e os seus tipos</h3>
+    <form action="#" method="get">
+        <label for="">Nome:</label><input type="text" name="name"><br>
+        <label for="">Idade:</label><input type="number" name="age"><br>
+        <label for="">Senha:</label><input type="password" name="password"><br>
+
+        <button type="button" onclick="alert('Cliquei aqui')">Clique aqui</button><br><!--tipo mais simples-->
+        <button type="reset">Limpar os campos</button><br><!--Limpa os campos-->
+        <button type="submit" autocomplete="off">Para enviar</button><!--o botão enviar é acionado com a tecla enter, por isso a necessidade de tomar cuidado ao enviar-->
+    </form>
+    <h1>Select e seus tipos</h1>
+    <form action="#" method="post">
+        <label for="">Nome:</label><input type="text" name="name"><br>
+        <label for="">Cargo:</label>
+        <select name="role" id="">
+            <option value="">Selecione o cargo</option>
+            <option value="adminstrativo">Adminstrativo</option>
+            <option value="gerente">Gerente</option>
+            <option value="diretor">Diretor</option>
+            <option value="presidente">Presidente</option>
+        </select><br>
+        <label for="">Assunto:</label><input type="text" name="assunto"><br>
+    </form>
+    <h1>Textarea</h1>
+    <form action="">
+        <label for="">Assunto:</label><input type="text" name="subject"><br><br>
+        <textarea rows="5" cols="50"name="message" id="" >Digite o seu texto aqui</textarea><br><br>
+        <button type="submit">Enviar</button>
+    </form>
+</html>
