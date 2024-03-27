@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body{
+            background-color: black;
+        }
+        img {
+            text-align: center;
+            /* Deixando a imagem no centro*/
+            display: block;
+            margin: 0 auto;
+            /*aqui termina*/
+            border-radius: 5px;
+        }
+        h1{
+            color: aliceblue;
+            text-align: center;
+        }
+        audio{
+            display: block;
+            margin: 0 auto;
+        }
+        video{
+            display: block;
+            margin: 0 auto;
+            width: 550px;
+            height: 300px;
+            border-radius: 50px;
+        }
+        iframe{
+            display: block;
+            margin: 0 auto;
+        }
+        #maps{
+            border-radius: 5px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Falando sobre imagens</h1>
+    <img src="img/chiefs.jpeg" alt="" width="500" height="282" title="imagem jpeg" alt="Imagem Chiefs"><br>
+    <img src="img/chiefs2.png" alt="" width="500" title="imagem png" alt="Imagem Chiefs">
+<hr>
+<h1>Falando sobre áudio</h1>
+<!--Autoplay server para que o áudio seja iniciado assim que for iniciado a página-->
+    <audio controls>
+        <source src="audio/Usher’s Apple Music Super Bowl Halftime Show.mp3">
+    </audio>
+    <hr>
+    <h1>Falando sobre vídeo</h1>
+    <video controls>
+        <source src="video/Barney Stinson - Nothing Suits Me Like A Suit Original HD+.mp4">
+        <track src="https://www.happyscribe.com/transcriptions/3d000a85280444c0b68692e89b5273ed/edit?organization_id=10771121" kind="subtitles" srclang="en">
+        <!--Tag track fica dentro da tag vídeo do qual utilizado para colocar capítulos e outros recursos-->
+    </video>
+    <hr>
+    <h1>Falando sobre Iframe</h1>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/z_AgCzt9zcM?si=xjjNKmDMEpyuPLv_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d467692.39564237144!2d-46.9249605936198!3d-23.681434586608948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448183a461d1%3A0x9ba94b08ff335bae!2zU8OjbyBQYXVsbywgU1A!5e0!3m2!1spt-BR!2sbr!4v1711460848897!5m2!1spt-BR!2sbr" width="560" height="315" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"id="maps"></iframe>
+</body>
+</html>
