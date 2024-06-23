@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter e Progress</title>
+</head>
+<body>
+    <header>
+        <h1>Meter e Progress</h1>
+    </header>
+    <main>
+        <meter value="50" max="100" min="0"></meter> <!-- Meter tem os mesmos atributos do meter mas ele carrega a metragem e não fica progredindo -->
+        <progress max="100" min="0" value="0" id="progress"></progress><!-- A tag progress aparece uma progressão do começo até o fim -->
+    </main>
+    <footer>
+
+    </footer>
+    <script>
+        var progress = document.getElementById('progress');
+        const interval = setInterval (() => {
+            progress.value += 10;
+            if (progress.value >=100){
+                clearInterval(interval);   
+                alert('Carregamento realizado com sucesso!')
+            }  
+        }, 1000);
+    </script>
+</body>
+</html>

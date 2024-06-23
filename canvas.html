@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100" style="border: solid 1px black;">
+
+    </canvas><!-- Tag utilizada para quem usa games ou quer seguir a carreira de games -->
+    <script>
+        var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+    ctx.moveTo(20, 20);
+    ctx.lineTo(100, 100);
+    ctx.stroke();
+    </script>
+</body>
+</html>
